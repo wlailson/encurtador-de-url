@@ -32,7 +32,7 @@ public class UrlController {
     }
 
     @GetMapping("/{shortCode}")
-    public ResponseEntity<Void> redirecionar(@PathVariable String shortCode) {
+    public ResponseEntity<Void> redirect(@PathVariable String shortCode) {
 
         String originalUrl = service.recoverOriginalString(shortCode);
 
